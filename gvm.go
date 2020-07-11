@@ -7,6 +7,7 @@ import (
 	"path"
 	"runtime"
 	"sort"
+	"strings"
 
 	"github.com/Masterminds/semver"
 	"github.com/google/go-github/github"
@@ -101,7 +102,7 @@ func (v *VersionsImpl) ListReleases(constraint string) (map[string]string, error
 
 		// check there is an asset with the given filename
 		for _, a := range g.Assets {
-			if *a.Name == fn {
+			if strings.ToLower(*a.Name) == strings.ToLower(fn) {
 				tags[*g.TagName] = *a.BrowserDownloadURL
 				break
 			}

@@ -33,7 +33,7 @@ func setup(t *testing.T) (string, *VersionsImpl) {
 		case "darwin":
 			return fmt.Sprintf("%s-osx", baseName)
 		case "linux":
-			return fmt.Sprintf("%s-linux", baseName)
+			return fmt.Sprintf("%s-Linux", baseName)
 		case "windows":
 			return fmt.Sprintf("%s.exe", baseName)
 		}
