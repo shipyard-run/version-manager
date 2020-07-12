@@ -26,14 +26,14 @@ func setup(t *testing.T) (string, *VersionsImpl) {
 		GOARCH:       "x64",
 	}
 
-	nf := func(goos, goarch string) string {
+	nf := func(ver, goos, goarch string) string {
 		baseName := "fake-service"
 
 		switch goos {
 		case "darwin":
 			return fmt.Sprintf("%s-osx", baseName)
 		case "linux":
-			return fmt.Sprintf("%s-Linux", baseName)
+			return fmt.Sprintf("%s-linux", baseName)
 		case "windows":
 			return fmt.Sprintf("%s.exe", baseName)
 		}
