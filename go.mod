@@ -1,5 +1,4 @@
-module github.com/nicholasjackson/version-manager
-
+module github.com/shipyard-run/version-manager
 go 1.14
 
 require (
