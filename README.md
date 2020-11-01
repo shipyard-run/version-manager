@@ -1,5 +1,7 @@
 # Version Manager 
 
+![Go](https://github.com/shipyard-run/version-manager/workflows/Go/badge.svg)
+
 Version manager allows you to manage and download the latest software versions for your applications from GitHub Releases.
 
 ## Example use
